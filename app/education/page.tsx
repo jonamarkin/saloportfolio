@@ -9,7 +9,7 @@ export default function EducationPage() {
     <div className="min-h-screen pt-32 pb-20 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-12 gap-16">
-          <div className="md:col-span-5 hidden md:block">
+          <div className="md:col-span-5">
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
