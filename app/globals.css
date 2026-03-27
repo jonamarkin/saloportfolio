@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  
+  --color-ink: #1A1A1A;
+  --color-paper: #F9F8F6;
+  --color-olive: #5A5A40;
+  --color-terracotta: #C86B53;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
