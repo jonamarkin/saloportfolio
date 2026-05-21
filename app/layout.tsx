@@ -15,8 +15,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'Salome Ayitey | Economist & PhD Researcher',
-  description: 'Portfolio of Salome Ayitey, a strategy-minded economist combining corporate banking experience with advanced quantitative research.',
+  title: 'Salome Ayitey | Economist, Researcher & Communicator',
+  description: 'Portfolio of Salome Ayitey, an economist and doctoral researcher working across research, stakeholder engagement, communication, sustainability, and advocacy.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

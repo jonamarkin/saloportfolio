@@ -24,9 +24,9 @@ export default function Navbar() {
 
   const links = [
     { href: '/about', label: 'About' },
-    { href: '/experience', label: 'Experience' },
-    { href: '/education', label: 'Education' },
-    { href: '/writings', label: 'Writings' },
+    { href: '/cv', label: 'CV' },
+    { href: '/projects', label: 'Personal Projects' },
+    { href: '/pod-advocacy', label: 'Pod & Advocacy' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -36,14 +36,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Link 
             href="/" 
-            className="font-serif text-2xl font-semibold tracking-tight relative z-50"
+            className="font-serif text-2xl font-semibold relative z-50"
             onClick={() => setIsOpen(false)}
           >
             SA.
           </Link>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium text-ink/70">
+          <div className="hidden md:flex items-center gap-6 text-xs lg:text-sm uppercase tracking-widest font-medium text-ink/70">
             {links.map(link => (
               <Link 
                 key={link.href} 
@@ -76,7 +76,7 @@ export default function Navbar() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="fixed inset-0 z-40 bg-paper flex flex-col items-center justify-center px-6"
           >
-            <div className="flex flex-col items-center space-y-8">
+            <div className="flex flex-col items-center space-y-7 text-center">
               {links.map((link, i) => (
                 <motion.div
                   key={link.href}
@@ -87,7 +87,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`font-serif text-4xl tracking-wide transition-colors ${
+                    className={`font-serif text-3xl sm:text-4xl tracking-wide transition-colors ${
                       pathname === link.href ? 'text-terracotta italic' : 'text-ink hover:text-olive'
                     }`}
                   >
